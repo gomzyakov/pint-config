@@ -26,8 +26,8 @@
         "laravel/pint": "^1.20"
     },
     "scripts": {
-        "cs-fix": "@php ./vendor/bin/pint --config vendor/my-company/coding-style/pint.json",
-        "cs-check": "@php ./vendor/bin/pint --diff=main --config vendor/my-company/coding-style/pint.json",
+        "format": "@php ./vendor/bin/pint --config vendor/my-company/coding-style/pint.json",
+        "code-style-check": "@php ./vendor/bin/pint --diff=main --config vendor/my-company/coding-style/pint.json",
         "test": [
             "@cs-check"
         ]
