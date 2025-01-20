@@ -1,6 +1,6 @@
 {
     "name": "gomzyakov/pint-config",
-    "description": "Code style configuration for Laravel Pint based on PSR-12.",
+    "description": "Code-style configuration for Laravel Pint",
     "type": "package",
     "license": "MIT",
     "keywords": [
