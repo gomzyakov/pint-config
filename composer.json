@@ -1,0 +1,35 @@
+{
+    "name": "gomzyakov/pint-config",
+    "description": "Code style configuration for Laravel Pint based on PSR-12.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "laravel-pint",
+        "pint",
+        "php-cs-fixer",
+        "code-style"
+    ],
+    "homepage": "https://github.com/gomzyakov/pint-config",
+    "authors": [
+        {
+            "name": "Alexander Gomzyakov",
+            "email": "alexander.gomzyakov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.20"
+    },
+    "scripts": {
+        "cs-fix": "@php ./vendor/bin/pint --config vendor/my-company/coding-style/pint.json",
+        "cs-check": "@php ./vendor/bin/pint --diff=main --config vendor/my-company/coding-style/pint.json",
+        "test": [
+            "@cs-check"
+        ]
+    }
+}
